@@ -1,0 +1,250 @@
+/* flatui color 
+icon fontawesome  then copy html code and paste it in div tag
+then go to fontawesome cdn library , copy1st and paste to the href of new link tag*/
+
+*{
+    box-sizing: border-box;
+   
+
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/* #f07167  #233A4E*/
+.toolbar{
+    height: 5rem;
+    display: flex;
+    background-color: #9c6db0;
+    align-items: center;
+
+}
+/*  */
+.toolbar > *{
+    margin-left: 2rem;
+     align-items: center;
+}
+
+/* a4b0be */
+.priority{
+    height: 3.5rem;
+    width: 16rem;
+    background-color: #a387af;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.action-btn{
+    height: 3.5rem;
+    width: 8rem;
+    background-color: #a387af;
+    display: flex;
+   
+}
+.action-btn > * {
+    width: 50%;
+    font-size: 2rem;
+    color: #dcdde1;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    justify-content: center}
+
+
+.color{
+    height: 1.5rem;
+    width: 3rem;
+    background-color: pink;
+    border-radius: 2px;
+   
+}
+/* .lightpink{
+    background-color: lightpink;
+}
+.lightblue{
+    background-color:lightblue
+}
+.lightgreen{
+    background-color:lightgreen
+}
+.black{
+    background-color:black
+} */
+.action-btn *:hover{
+    
+    font-size: 2.5rem;
+    background-color: #6f557a;
+}
+
+.modal-container{
+    height: 50vh;
+    width: 45vw;
+    
+    border: none;
+    outline: none;
+    position: absolute;
+    top: calc((100% - 50vh) /2);
+    left:calc((100% - 45vw) /2);
+    display: flex  ;
+    box-shadow: rgba(50, 50, 93, 0.25) 25px 50px 100px -20px, rgba(0, 0, 0, 0.3) 25px 30px 60px -30px, rgba(10, 37, 64, 0.35) 25px -2px 6px 0px inset;
+
+
+
+}
+
+.textcontainer{
+    width: 70%;
+    height: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    background-color: #d5cabd;
+    padding: 2rem;
+    font-size: 1.3rem;
+  }
+
+.modalcolor-container{
+    width: 30%;
+    height: 100%;
+    background-color: #879789;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+}
+.modalcolor{
+    height: 2.5rem;
+    width: 60%;
+    background-color: aqua;
+}
+
+.pink{
+background-color: pink;
+}
+.green{
+    background-color: lightgreen
+}
+.blue{
+    background-color:lightblue
+}
+.black{
+    background-color: black;
+}
+
+.border{
+    border: 4px solid #e5e7d5;
+}
+
+.ticketmain-cont{
+   
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+   
+    
+}
+
+.ticket-container{
+    height: 13rem;
+    width: 17rem;    
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    background-color: #eff0e6;
+}
+.ticketcolor{
+    /* background-color: black; */
+    height: 1.2rem;
+    width: 95%;
+   
+}
+.ticketheading{
+    background-color: #eff0e6;
+    height: 2rem;
+    padding: 0.4rem;
+   
+}
+.textValue{
+    height: calc(100% - 5rem);
+    padding: 0.4rem;
+    outline: none;
+}
+.lockdiv{
+    color: #a1a1c0;
+    height: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    padding-right: 0.5rem;
+}
+.ticketcolor-container{
+    display: flex;
+    justify-content: space-around;
+    
+    
+    
+    
+
+}
+.deleteicon{
+    width: 6%;
+    /* background-color: #6f557a; */
+    height: 1.2rem;
+    font-size: 1rem;
+   
+    color: #FFFFFF;  
+    
+}
+.deleteicon:hover{
+    font-size: 1.1rem;
+    color: black;
+}
+
+
+@media screen and (min-width:425px) and (max-width:768px) {
+    .modal-container{
+        width: 60vw;
+        left: calc((100vw - 60vw)/2);
+    }
+    
+}
+
+@media screen and (max-width:426px) {
+    .modal-container{
+        width: 75vw;
+        left: calc((100vw - 75vw)/2);
+        height: 70vh;
+        flex-direction: column;
+   
+    }
+    .action-btn{
+        width: 6rem;
+    }
+    .textcontainer{
+        width: 100%;
+        height: 80%;
+    }
+    .modalcolor-container{
+        flex-direction: row;
+        width: 100%;
+        height: 20%;
+    }
+    .modalcolor{
+        width: 20%;
+    }
+
+
+
+    
+}
+
+
+
+
+
+
+
+
